@@ -350,7 +350,7 @@ img:not([draggable]), embed, object, video{
    ============================== */
 
 body{
-	color: #111;
+	color: #fff;
 	font-size: 14px;
 	font-family: "Open Sans", arial, sans-serif;
 	line-height: 1.6;	
@@ -1486,7 +1486,7 @@ a.logo:hover{
 	top: 0;
 	left: 0;
 	text-align: left;
-	background: rgba(255,255,255, .97);
+	background: rgba(0,0,0, .97);
 	
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
 	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.05);
@@ -1530,7 +1530,7 @@ a.logo:hover{
     position: relative;
 }
 .inner-nav ul li a{
-	color: #777;
+	color: #ccc;
     letter-spacing: 2px;
 	display: inline-block;
 	-moz-box-sizing: border-box;
@@ -1549,8 +1549,9 @@ a.logo:hover{
 }  
 .inner-nav ul li a:hover,
 .inner-nav ul li a.active{
-	color: #000;
+	color: #fff;
 	text-decoration: none;
+  font-weight: 800;
 }
 
 
@@ -2673,6 +2674,7 @@ a.logo:hover{
     text-align: center;
     letter-spacing: 0.5em;
     line-height: 1.4;
+    color: #111;
 }
 .section-more{
     margin-top: 7px;
