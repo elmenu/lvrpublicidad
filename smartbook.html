@@ -1,0 +1,621 @@
+<!doctype html>
+<html amp lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	<script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+	<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+	<link rel="shortcut icon" href="https://smartbook.vip/img/favicon.png" type="image/png">
+	<title>Smartbook | Pago Seguro</title>
+	<link rel="canonical" href="/">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "headline": "Agendamiento de citas",
+      }
+    </script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+	<style amp-custom=''>
+		* {
+			box-sizing: border-box;
+			font-family: 'Roboto';
+			transition: all 0.2s linear;
+		}
+		/* Utilities */
+		.mt-20 {
+			margin-top: 20px;
+		}
+
+		.mt-30 {
+			margin-top: 30px;
+		}
+
+		.mt-40 {
+			margin-top: 40px;
+		}
+
+		.ml-20 {
+			margin-left: 20px;
+		}
+
+		.mr-20 {
+			margin-left: 20px;
+		}
+
+		.clearfix {
+			clear: both;
+		}
+
+		h2 {
+			font-size: 180%;
+			word-spacing: 2px;
+			text-align: center;
+			margin-bottom: 30px;
+			letter-spacing: 1px;
+		}
+
+		h2:after {
+			display: block;
+			height: 2px;
+			background-color: #19B5FE;
+			content: ' ';
+			width: 100px;
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+
+		.grey-bg {
+			background-color: #f6f6f6;
+		}
+
+		.button {
+			color: #fff;
+			padding: 10px 15px;
+			background-color: #19B5FE;
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		.button.green.secondary {
+			color: #414141;
+			background-color: transparent; 
+			border: 2px solid #26A65B;
+		}
+
+		.button.green.secondary:hover,
+		.button:hover {
+			color: #fff;
+			background-color: #26A65B;
+			box-shadow: 0 0 15px rgba(33,33,33,.5); 
+		}
+
+		.meta {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.sub-text {
+			text-align: center;
+			font-weight: 400;
+			color: #a5a5a5;
+		}
+
+		.highlight {
+			color: #19b5fe;
+			font-weight: 700;
+		}
+		.content-width {
+			width: 500px;
+		}
+		.content {
+			margin: 0 auto;
+			padding: 50px 0px;
+			line-height: 140%;
+		}
+
+		/* Header */
+		header {
+			background: #0B0C10;
+			padding: 10px 0px;
+			position: sticky;
+			top: 0;
+			z-index: 999;
+		}
+		#sidebar {
+			width: 300px;
+			background-color: #0B0C10;
+			padding: 1.5rem;
+		}
+		.sidebar-menu {
+			padding: 0px;
+			margin: 0px;
+		}
+		.amp-custom-sidebar-header {
+			line-height: 3.5rem;
+			min-height: 3.5rem;
+			color: #fff;
+		}
+		#sidebar-close {
+			cursor: pointer;
+		}
+		.sidevar-nav-item {
+			padding: 10px 0px;
+			margin: 0px;
+			list-style: none;
+			color: #021425;
+			text-transform: capitalize;
+			letter-spacing: .6px;
+			line-height: 2.0625;
+		}
+		.sidebar-nav-link {
+			cursor: pointer;
+			text-decoration: none;
+			color: #fff;
+		}
+		.sidebar-nav-link:hover {
+			color: #19B5FE;
+		}
+		.menu {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+		}
+		.logo {
+			width: 200px;
+		}
+
+		.links {
+			display: flex;
+			justify-content: flex-end;
+			width: 420px;
+		}
+		.links .link {
+			color: #fff;
+			text-decoration: none;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			margin-left: 18px;
+		}
+		.links .link:hover {
+			color: #19B5FE;
+		}
+		#sidebar-menu-btn {
+			background: 0 0;
+			border: 0;
+			color: #fff;
+			font-weight: 100;
+			font-size: 22px;
+			display: none;
+		}
+
+		/* Hero */
+		.hero {
+			width: 100%;
+			height: 350px;
+			background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/hero-3.jpg);
+			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/hero-3.jpg);
+			background-size: cover;
+			color: #fff;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		#hero-cta {
+			position: absolute;
+			bottom: 50px;
+		}
+
+		.heading {
+			font-size: 50px;
+			color: #ffffff;
+			font-weight: 700;
+		}
+
+		/* About */
+		#about {
+			text-align: center;
+		}
+
+		/* WHY */
+		#why-content {
+			width: 100%;
+		}
+
+		.features {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+		}
+
+		.feature {
+			flex: 1;
+			padding: 20px;
+			flex-basis: 50%;
+		}
+
+		.feature-info {
+			z-index: 20;
+			color: #fff;
+			background-color: #0B0C10;;
+			font-size: 20px;
+			display: flex;
+			flex-direction: column;
+			padding: 0px 20px 20px 20px;
+			min-height: 260px;
+		}
+
+		.feature-info h3:after {
+			display: block;
+			height: 2px;
+			background-color: #19B5FE;
+			content: ' ';
+			width: 50px;
+			margin-top: 30px;
+		}
+
+		.feature-bg {
+			background-color: #0B0C10;;
+			width: 100%;
+			height: 450px;
+			margin-top: -400px;
+		}
+
+		/* CONTACT */
+		#contact-form {
+			width: 100%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+
+		#contact-form input[type="email"], #contact-form input[type="text"], #contact-form textarea {
+			width: 100%;
+			border: 1px solid #ebebeb;
+			display: block;
+			margin: 20px 0px;
+			padding: 20px;
+			font-size: 15px;
+		}
+
+		#contact-form input:hover {
+			border-color: #414141;
+		}
+
+		#contact-form input[type="submit"] {
+			width: 100%;
+			padding: 20px;
+			border: 0;
+			background: #19b5fe;
+			cursor: pointer;
+			color: #fff;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		#contact-form input[type="submit"]:hover {
+			background: #26A65B;
+		}
+
+		/* FOOTER */
+		footer {
+			background-color: #f5f5f5;
+			color: #fff;
+		}
+		footer a {
+    		color: #fff;
+    		text-decoration: none;
+		}
+		footer a:hover {
+			color:#19B5FE;
+			text-decoration: underline;
+		}
+		footer .footer-menu {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.footer-item {
+			flex: 1;
+			text-align: left;
+			flex-basis: 200px;
+		}
+		.footer-item h2 {
+			text-align: left;
+		}
+		.footer-item h2::after {
+			background-color: #ebebeb;
+			content: " ";
+			width: 50px;
+			margin-left: 0px;
+		}
+		.footer-item ul {
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+			padding: 0px;
+		}
+		.footer-item ul li {
+			list-style: none;
+			margin-bottom: 5px;
+			font-size: 14px;
+		}
+		footer .social {
+			display: flex;
+			justify-content: center;
+		}
+		footer .social ul {
+			display: flex;
+			flex-direction: row;
+			margin-top: 10px;
+			padding: 0px;
+		}
+		footer .social ul li {
+			list-style: none;
+			margin-right: 10px;
+		}
+		footer .social ul li a {
+			color: #ebebeb;
+			font-size: 16px;
+		}
+		footer .meta-content {
+			font-size: 14px;
+			text-align: center;
+		}
+		footer .meta-content a {
+			color: #19B5FE;
+		}
+
+		p {
+			text-align: left;
+    		color: #484848;
+    		line-height: 2;
+		}
+
+		.lista {
+		    text-align: center;
+		    color: #19b5fe;
+    		font-size: 20px;
+		}
+
+
+
+		@media only screen and (max-width: 1024px) {
+			.features {
+				flex-wrap: wrap;
+			}
+			footer h2 {
+				font-size: 140%;
+			}
+			#why-content .meta {
+				flex-direction: row;
+			}
+			.content-width {
+			    width: 80%;
+			}
+
+		}
+		@media only screen and (max-width: 768px) {
+			.logo {
+				width: 160px;
+			}
+			.links {
+				display: none;
+			}
+			#sidebar-menu-btn {
+				display: inline;
+				height: 35px;
+			}
+			#contact-form {
+				width: 80%;
+			}
+			.footer-item {
+				flex-basis: 50%;
+			}
+		}
+		@media only screen and (max-width: 600px) {
+			header {
+				padding: 5px 0px;
+				height: 50px;
+			}
+			.content-width { 
+				width: 90%;
+			}
+			#contact-form {
+				width: 100%;
+			}
+			.heading {
+				font-size: 28px;
+			}
+			.feature {
+				flex-basis: 100%;
+			}
+			.meta {
+				flex-direction: column;
+			}
+			.meta > a {
+				text-align: center;
+				margin-left: 0px;
+				margin-bottom: 10px;
+			}
+			footer h2 {
+				font-size: 110%;
+			}
+			.content {
+			   
+			    padding: 10px 0px;
+			    
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="menu content-width">
+			<div class="logo">
+				<a href="https://smartbook.vip">
+					<amp-img src="https://smartbook.vip/img/logo3.png" layout="responsive" width="218" height="60"></amp-img>
+				</a>
+			</div>
+			<div class='links'>
+				<a class="link" href="https://smartbook.vip/#somos">Nosotros</a>
+				<a class="link" href="https://smartbook.vip/#funciona">Servicio</a>
+				<a class="link" href="https://smartbook.vip/#beneficios">Clientes</a>
+				<a class="link" href="https://smartbook.vip/#contacto">Contacto</a>
+			</div>
+			<button id="sidebar-menu-btn" on="tap:sidebar.toggle">☰</button>
+		</div>
+	</header>
+	<amp-sidebar id="sidebar" layout="nodisplay" side="right">
+		<div class="amp-custom-sidebar-header">
+			<div role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0" id="sidebar-close">✕</div>
+		</div>
+		<ul class="sidebar-menu">
+			<li class="sidevar-nav-item"><a href="https://smartbook.vip/#somos" class="sidebar-nav-link">Nosotros</a></li>
+			<li class="sidevar-nav-item"><a href="https://smartbook.vip/#funciona" class="sidebar-nav-link">Servicios</a></li>
+			<li class="sidevar-nav-item"><a href="https://smartbook.vip/#beneficios" class="sidebar-nav-link">Clientes</a></li>
+			<li class="sidevar-nav-item"><a href="https://smartbook.vip/#contacto" class="sidebar-nav-link">Contacto</a></li>
+		</ul>
+	</amp-sidebar>
+
+
+<section id="contacto">
+		<div class="content content-width" style="font-size: 16px;">
+			<h2>Pago Seguro</h2>
+			<p>
+				Smartbook es un servicio <b>gratuito</b> de agendamiento. Ahora debes cancelar un valor de $20,000 pesos en concepto de seguro de cumplimiento, pero se te descuenta de lo que hayas acordado. Ten en cuenta que sino cumples la cita, pierdes los $20,000. 
+
+
+
+			</br>
+
+				<form method="post" id="contact-form" action-xhr="/" target="_top">
+				<input type="text" name="celular" placeholder="Celular" required> 
+				<input type="checkbox" name="acepto" placeholder="acepto" value="Acepta" checked required> Acepto <a href="https://smartbook.vip/terminos/">Términos de uso</a>, <a href="https://smartbook.vip/terminos/#privacidad">Política de Privacidad</a> y <a href="https://smartbook.vip/terminos/#cookies">Uso de Cookies</a>
+				</form> 
+			</br>
+<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+  <input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_grande.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+  <input name="buttonId" type="hidden" value="2KncZ/2WdQ8v+bw+KeTTArOcfgC4+9IVHIDoN81IPhWYKIoeXL+LOQ=="/>
+  <input name="merchantId" type="hidden" value="705906"/>
+  <input name="accountId" type="hidden" value="709018"/>
+  <input name="description" type="hidden" value="booking"/>
+  <input name="referenceCode" type="hidden" value="booking"/>
+  <input name="amount" type="hidden" value="20000.00"/>
+  <input name="tax" type="hidden" value="0.00"/>
+  <input name="taxReturnBase" type="hidden" value="0.00"/>
+  <input name="currency" type="hidden" value="COP"/>
+  <input name="lng" type="hidden" value="es"/>
+  <input name="approvedResponseUrl" type="hidden" value="https://smartbook.vip/"/>
+  <input name="declinedResponseUrl" type="hidden" value="https://smartbook.vip/"/>
+  <input name="pendingResponseUrl" type="hidden" value="https://smartbook.vip/"/>
+  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+  <input name="buttonType" value="SIMPLE" type="hidden"/>
+  <input name="signature" value="d638712f6e0953c2c9d576c558cdb8fc54a389c50b18cf272d43f5f5f6e9cbb2" type="hidden"/>
+</form>
+			  
+			</p>
+			</br></br>
+
+			<div class="meta">
+				<p>Si tienes alguna duda o sugerencia por favor escríbenos a <span class="highlight">info@smartbook.vip</span></p>
+			</div>
+	</section>
+
+
+
+
+	<footer>
+		<div class="content content-width">
+			
+			<div class="meta-content">
+				<p>&#169; 2020 <a href="https://smartbook.vip">smartbook.vip</a>. Todos los derechos reservados. <a href="https://smartbook.vip/terminos.html">Términos de Uso</a> </p>
+				
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
